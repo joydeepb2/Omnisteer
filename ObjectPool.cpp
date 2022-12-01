@@ -10,7 +10,13 @@ bool ObjectPool::removeObject(int)
  cout << "Entered ObjectPool::removeObject" << endl;
 }
  
-Object ObjectPool::getObject(int)
+Object& ObjectPool::getObject(int)
 {
  cout << "Entered ObjectPool::getObject" << endl;
+}
+
+int ObjectPool::getLen()
+{
+ cout << "Entered ObjectPool::getLen" << endl;
+ return 2;
 }
