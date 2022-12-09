@@ -4,8 +4,13 @@ using namespace std;
 
 //class Object;
 
-int Object::getType()
+Object::obj_types Object::getType()
 {
- cout << "Entered  Object::getType" << endl;
- return TYPE1;
+// cout << "Entered  Object::getType" << endl;
+return (Object::obj_types)type;
+}
+
+void Object::setType(Object::obj_types ot)
+{
+ type = ot;
 }

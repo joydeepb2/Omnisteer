@@ -10,15 +10,17 @@ class Object{
 	private:
 		int type;
 	public:
-		enum obj_types {TYPE1, TYPE2};
-		int getType();
+//		enum obj_types1 {TYPE1, TYPE2};
+		enum obj_types {MRC, MVC, CB_Prof, IOT_min};
+		Object::obj_types getType();
+		void setType(Object::obj_types);
 };
 
 class ObjectPool {
 	private:
 		std::map<int,Object>oblst;
 	public:
-		bool addObject(Object, int);
+		bool addObject(Object&, int);
 		bool removeObject(int);
 		Object& getObject(int);
 		int getLen();
