@@ -43,5 +43,9 @@ Policy& PolicyPool::getPolicy(int i)
  cout << "Could not find Policy" << endl;
 // return (Policy &)polst[i];
 }
- 
+
+const map<int,Policy>& PolicyPool::getPolicyPool() const
+{
+ return polst;
+}
  
